@@ -9,6 +9,7 @@
   box-shadow: 0 2px 16px #00c89422;
   border-bottom: 1.5px solid rgba(0, 200, 148, 0.13);
   font-family: 'Poppins', sans-serif;
+  height: 66px;
 }
 
 .transparent {
@@ -25,9 +26,10 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.7rem 1.2rem;
-  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 0.2rem 1.2rem;
+  gap: 1.2rem;
+  min-height: 60px;
 }
 
 .logo {
@@ -63,6 +65,7 @@
   align-items: center;
   gap: 2rem;
   margin-right: 0.5rem;
+  margin-left: 1.5rem;
 }
 
 .navMenu ul {
@@ -85,6 +88,7 @@
   position: relative;
   padding: 0.9rem 2.2rem;
   border-radius: 8px;
+  display: inline-block;
 }
 
 .navMenu a::after {
@@ -94,7 +98,7 @@
   height: 2px;
   background: #00c894;
   transition: width 0.3s;
-  margin-top: 4px;
+  margin: 4px auto 0 auto;
 }
 
 .navMenu a:hover::after,
@@ -123,7 +127,7 @@
 /* Responsive */
 @media (max-width: 900px) {
   .container {
-    padding: 0.7rem 1rem;
+    padding: 0.2rem 1rem;
   }
 
   .navMenu ul {
@@ -133,13 +137,16 @@
   .brandName {
     font-size: 1.1rem;
   }
+  .navMenu {
+    margin-left: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     justify-content: flex-start;
-    gap: 1.5rem;
-    padding: 0.7rem 1rem;
+    gap: 1rem;
+    padding: 0.2rem 0.7rem;
   }
 
   .logo {
@@ -148,14 +155,18 @@
 
   .menuIcon {
     display: block;
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 4000;
     cursor: pointer;
     width: 32px;
     height: 32px;
     background: none;
     border: none;
     margin-left: 0;
-    margin-right: 0.5rem;
-    order: 2;
+    margin-right: 0;
+    order: 3;
   }
 
   .navMenu {
