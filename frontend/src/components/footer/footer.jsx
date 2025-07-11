@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./footer.module.css";
-import logo from "../../assets/images/Basirah Logo Full Color(Transparent).png";
+import logo from "../../assets/images/Basirah Full Color Transparent.png";
+import skylink from "../../assets/images/logo.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Footer() {
@@ -9,20 +10,22 @@ function Footer() {
       <div className={styles.wave}></div>
       <div className={styles.footerContent}>
         <div className={styles.leftColumn}>
-          <div className={styles.logoTitle}>
+          <div className={styles.logoBlock}>
             <img src={logo} alt="Basirah Logo" className={styles.footerLogo} />
-            <h3 className={styles.footerTitle}>Basirah Institute</h3>
+            <div className={styles.poweredBy}>
+              <p>Powered by</p>
+              <img src={skylink} alt="Partner Logo" className={styles.partnerLogo} />
+            </div>
           </div>
-          <p className={styles.footerDesc}>
-            Empowering the next generation with Qur'anic knowledge, modern tools,
-            and a global community.
-          </p>
         </div>
         <div className={styles.rightColumn}>
           <div className={styles.footerAddress}>
             <strong>Address:</strong>
             <br />
             123 Qur'anic Studies Ave, City, Country
+          </div>
+          <div className={styles.footerPhone}>
+            <strong>Phone:</strong> +123 456 7890
           </div>
           <div className={styles.socials}>
             <a

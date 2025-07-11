@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
-import logo from "../../assets/images/Basirah Logo Full Color(Transparent).png";
+import logo from "../../assets/images/Basirah Full Color Transparent.png";
 import { FaBars } from "react-icons/fa";
 
 const navLinks = [
@@ -55,7 +55,6 @@ export default function Header() {
       <div className={styles.container}>
         <a href="#" className={styles.logo}>
           <img src={logo} alt="Basirah Logo" />
-          <span className={styles.brandName}>Basirah Institute</span>
         </a>
         <nav className={`${styles.navMenu} ${menuOpen ? styles.open : ""}`}>
           <button

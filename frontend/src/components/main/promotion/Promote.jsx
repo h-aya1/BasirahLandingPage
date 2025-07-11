@@ -28,13 +28,7 @@ function Promotion() {
 
   return (
     <section className={styles.promotionBest} id="app">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div className={styles.leftSection}>
         <div
           className={`${styles.frame} ${isRotating ? styles.rotate : ""}`}
           style={{ width: 220, height: 440 }}
